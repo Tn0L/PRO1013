@@ -1,3 +1,6 @@
+<?php
+  include "../controller/check.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
