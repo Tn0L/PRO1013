@@ -1,4 +1,5 @@
 <?php
+  include "../controller/logout.php";
   include "../controller/login.php";
 ?>
 <!DOCTYPE html>
@@ -42,12 +43,12 @@
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                   </div>
-                  <form class="user" method="post">
+                  <form class="user" action="login.php" method="post">
                     <div class="form-group">
-                      <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" name="user" placeholder="User Name">
+                      <input type="text" class="form-control form-control-user"  aria-describedby="emailHelp" name="user" placeholder="User Name">
                     </div>
                     <div class="form-group">
-                      <input type="password" class="form-control form-control-user" id="exampleInputPassword" name="pass" placeholder="Password">
+                      <input type="password" class="form-control form-control-user"  name="pass" placeholder="Password">
                     </div>
                     <div class="form-group">
                       <div class="custom-control custom-checkbox small">
@@ -55,7 +56,7 @@
                         <label class="custom-control-label" for="customCheck">Remember Me</label>
                       </div>
                     </div>
-                    <input class="btn btn-primary btn-user btn-block" name="login" value="login">
+                    <input type="submit" class="btn btn-primary btn-user btn-block" name="dangnhap" value="dangnhap">
                       
                   </form>
                   <hr>

@@ -1,19 +1,19 @@
 <?php
-    ob_start();
-    session_start();
     include "../model/pdo.php";
     function getadmin($user,$pass){
         $sql="select * from admin where admin=? and adminPass=?";
-        $kq=pdo_query_one($sql);
+        $kq=pdo_query_one($sql,$user,$pass);
+        return $kq;
     }
-    if(isset($_POST['login']) && $_POST['login']){
+    if(isset($_POST['dangnhap']) && $_POST['dangnhap']){
         $user=$_POST['user'];
         $pass=$_POST['pass'];
-        $kq=getuser($user,$pass);
-        $count=count($kq);
-        if($count>0){
-            $_SESSION['idadmin']=$kq['id'];
-            $_SESSION['nameadmin']=$kq['admin'];
+        $kt=getadmin($user,$pass);
+        $kiemtra=count($kt);
+        if($kiemtra>0){
+            $_SESSION['idadmin']=$kt['idAdmin'];
+            $_SESSION['nameadmin']=$kt['admin'];
+            $_SESSION['imgadmin']=$kt['adminAvatar'];
             header('Location: index.php');
         }
     }
