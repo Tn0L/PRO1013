@@ -4,3 +4,6 @@
 .logo-img-side{
     height: 45px;
 }
+.name-admin{
+    text-transform: capitalize;
+}
