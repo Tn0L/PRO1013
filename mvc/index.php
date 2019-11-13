@@ -5,5 +5,5 @@
     include 'view/main-category.php';
     include 'view/main-product.php';
     include 'view/main-related-product.php';
-    include 'footer.php';
+    include 'view/footer.php';
 ?>

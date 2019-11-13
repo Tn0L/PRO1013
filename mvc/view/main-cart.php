@@ -17,7 +17,7 @@
                                 <td>
                                     <div class="media">
                                         <div class="d-flex">
-                                            <img src="img/cart.jpg" alt="">
+                                            <img src="view/img/cart.jpg" alt="">
                                         </div>
                                         <div class="media-body">
                                             <p>Minimalistic shop for multipurpose use</p>
@@ -45,7 +45,7 @@
                                 <td>
                                     <div class="media">
                                         <div class="d-flex">
-                                            <img src="img/cart.jpg" alt="">
+                                            <img src="view/img/cart.jpg" alt="">
                                         </div>
                                         <div class="media-body">
                                             <p>Minimalistic shop for multipurpose use</p>
@@ -73,7 +73,7 @@
                                 <td>
                                     <div class="media">
                                         <div class="d-flex">
-                                            <img src="img/cart.jpg" alt="">
+                                            <img src="view/img/cart.jpg" alt="">
                                         </div>
                                         <div class="media-body">
                                             <p>Minimalistic shop for multipurpose use</p>
