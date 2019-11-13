@@ -1,6 +1,9 @@
 <?php
-    include 'header.php';
-    include 'banner.php';
-    include 'main.php';
+    include 'view/header.php';
+    include 'view/big-banner.php';
+    include 'view/main-featurearea.php';
+    include 'view/main-category.php';
+    include 'view/main-product.php';
+    include 'view/main-related-product.php';
     include 'footer.php';
 ?>
