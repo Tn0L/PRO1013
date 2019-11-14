@@ -1,0 +1,41 @@
+.main_box{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.navbar{
+    border-radius: 5px !important;
+    padding: 0rem 1rem !important;
+}
+.navbar-brand{
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+.bg-light{
+    background-color: rgb(255, 255, 255) !important;
+}
+.nh-mt{
+    margin-top: 31px !important;
+    font-style: italic !important;
+    color: rgb(255, 123, 0) !important;
+}
+.nh-ml{
+    margin-left: 90px;
+}
+
+/* menu */
+.nh-orange{
+    color: rgb(252, 134, 0) !important;
+}
+.nav-link:hover{
+    color: rgb(252, 134, 0) !important;
+    transition: 0.4s;
+}
+.nh-mlm{
+    margin-left: 20px;
+}
+.dropdown-item:hover{
+    background-color: rgb(252, 164, 0) !important;
+}
+/* search */
+.nh-ml3{
+    margin-left: 50px !important;
+}
