@@ -1,5 +1,5 @@
 
-  var bgbanner = new Swiper('.swiper-container1', {
+  var bgbanner = new Swiper('.swiper-container', {
     loop:true,
     spaceBetween: 0,
     slidePerView : 'auto',
