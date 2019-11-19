@@ -1,2 +1,0 @@
-<menu>
-    <small->$_SESSION

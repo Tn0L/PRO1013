@@ -37,7 +37,7 @@
     <?php
         include '../mvc/view/header.php';
         include '../mvc/view/big-banner.php';
-        include '../mvc/view/main.php';
+        include '../mvc/view/';
         include '../mvc/view/footer.php';
     ?>
 
