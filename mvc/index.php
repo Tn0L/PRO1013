@@ -35,9 +35,13 @@
 <body>
 
     <?php
+		require_once('model/pdo.php');
+		require_once('model/sanpham.php');
+		$sanpham = show_sanpham();
+
         include '../mvc/view/header.php';
         include '../mvc/view/big-banner.php';
-        include '../mvc/view/';
+        include '../mvc/view/main-product.php';
         include '../mvc/view/footer.php';
     ?>
 
