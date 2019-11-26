@@ -2,14 +2,14 @@
     include 'view/header.php';
     if(isset($_GET['act'])){
         switch ($_GET['act']) {
+            case 'home':
+                include_once 'view/home.php';
+                break;
             case 'category':
-                include_once 'view/category.php';
+                include_once 'view/add-category.php';
                 break;
-            case 'single_product':
-                include_once 'view/single_product.php';
-                break;
-            case 'tracking':
-                include_once 'view/tracking.php';
+            case 'product':
+                include_once 'view/add-product.php';
                 break;
             case 'cart':
                 include_once 'view/cart.php';

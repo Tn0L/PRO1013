@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif!important;
+}
+.small-logo{
+    width: 28px!important;
+    height: 28px!important;
+}
+.logo{
+    width: 28px!important;
+    height: 28px!important;
+}
