@@ -91,8 +91,8 @@
                 <i class="mdi mdi-format-list-bulleted menu-icon"></i>
               </a>
             </li>
-            <li class="nav-item" id="home">
-              <a class="nav-link" href="pages/forms/basic_elements.html">
+            <li class="nav-item" id="product">
+              <a class="nav-link" href="?act=product">
                 <span class="menu-title">Sản Phẩm</span>
                 <i class="mdi mdi-table-large menu-icon"></i>
               </a>

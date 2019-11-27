@@ -24,7 +24,7 @@
                         </div>
                         <div class="form-group">
                             <label for="kind">Loại</label>
-                            <input type="text" class="form-control" name="nameCategory" value="<?php if(isset($_GET['nameCategory'])){echo $_GET['nameCategory'];}else{echo "";}?>" placeholder="Loại" required>
+                            <input type="text" class="form-control" name="nameCategory" value="<?php if(isset($_GET['nameCategory'])){echo $_GET['nameCategory'];}else{echo "";}?>" placeholder="Loại Sản Phẩm" required>
                         </div>
                         <div class="justify-content-center row">
                             <button type="submit" name="submit" value="submit" class="btn btn-gradient-primary mr-2">Thêm</button>
@@ -55,10 +55,10 @@
                                         <td> '.$category['ma_loai'].' </td>
                                         <td> '.$category['ten_loai'].' </td>
                                         <td> 
-                                            <a type="submit" href="?act=category&idCategory='.$category['ma_loai'].'&nameCategory='.$category['ten_loai'].'">
+                                            <a href="?act=category&idCategory='.$category['ma_loai'].'&nameCategory='.$category['ten_loai'].'">
                                                 <i class="mdi mdi-auto-fix fix col"></i>
                                             </a>
-                                            <a type="submit" href="?act=category&delete='.$category['ma_loai'].'">
+                                            <a href="?act=category&delete='.$category['ma_loai'].'">
                                                 <i class="mdi mdi-delete col delete col" ></i>
                                             </a>
                                         </td>
