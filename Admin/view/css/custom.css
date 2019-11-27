@@ -10,3 +10,23 @@
     width: 28px!important;
     height: 28px!important;
 }
+.th{
+    font-weight: 800!important;
+    border: none!important;
+    font-size: 15px!important;
+}
+.head-fix{
+    text-align: center;
+}
+.fix{
+    color: #1bcfb4;
+    cursor: pointer;
+    border: 1px solid;
+    background: white!important;
+}
+.delete{
+    color: red;
+    cursor: pointer;
+    border: 1px solid;
+    background: white!important;
+}

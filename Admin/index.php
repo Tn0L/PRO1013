@@ -1,4 +1,6 @@
 <?php
+    include 'model/pdo.php';
+    
     include 'view/header.php';
     if(isset($_GET['act'])){
         switch ($_GET['act']) {
@@ -6,6 +8,20 @@
                 include_once 'view/home.php';
                 break;
             case 'category':
+                include 'model/category.php';
+                if(isset($_POST['submit']) && $_POST['submit']){
+                    $name = $_POST['nameCategory'];
+                    insertCategories($name);
+                }
+                else if(isset($_GET['delete']) && $_GET['delete']){
+                    $id = $_GET['delete'];
+                    deleteCategories($id);
+                }
+                else if(isset($_POST['edit']) && $_POST['edit']){
+                    $name = $_POST["nameCategory"];
+                    $id = $_POST["id"];
+                    editCategories($name,$id);
+                }
                 include_once 'view/add-category.php';
                 break;
             case 'product':
