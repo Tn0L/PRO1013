@@ -25,6 +25,23 @@
                 include_once 'view/add-category.php';
                 break;
             case 'product':
+                include 'model/product.php';
+                if(isset($_POST['submit']) && $_POST['submit']){
+                    $nameProduct = $_POST['nameProduct'];
+                    $categoryProduct = $_POST['categoryProduct'];
+                    $priceProduct = $_POST['priceProduct'];
+                    $describeProduct = $_POST['describeProduct'];
+                    insertProduct($nameProduct,$categoryProduct,$priceProduct,$describeProduct);
+                }
+                else if(isset($_GET['delete']) && $_GET['delete']){
+                    $idProduct = $_GET['delete'];
+                    deleteProduct($idProduct);
+                }
+                else if(isset($_POST['edit']) && $_POST['edit']){
+                    $idProduct = $_POST["id"];
+                    $nameProduct = $_POST["nameCategory"];
+                    editProduct($name,$id);
+                }
                 include_once 'view/add-product.php';
                 break;
             case 'cart':

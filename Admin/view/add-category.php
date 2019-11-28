@@ -20,7 +20,7 @@
                     <form class="needs-validation" action="?act=category" method="post">
                         <div class="form-group">
                             <label for="id">Id</label>
-                            <input type="text" class="form-control" name="id" value="<?php if(isset($_GET['idCategory'])){echo $_GET['idCategory'];}else{echo "";}?>" >
+                            <input readonly type="text" class="form-control" name="id" value="<?php if(isset($_GET['idCategory'])){echo $_GET['idCategory'];}else{echo "";}?>" >
                         </div>
                         <div class="form-group">
                             <label for="kind">Loại</label>
