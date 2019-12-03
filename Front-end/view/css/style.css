@@ -5,6 +5,42 @@
  ------------------------------------
  ====================================*/
 
+ /* CUSTOM CSS TIENNV */
+.t-title{
+	color: white;
+	background: #f51167;
+	padding: 10px;
+}
+.t-pd10{
+	padding: 10px;
+}
+.t-bl{
+	width: 100%;
+	position: relative;
+}
+.t-bl input[type=text]{
+	display: block;
+	box-sizing: border-box;
+	border: #f51167 solid 1px;
+	width: 100%;
+	padding: 10px;
+}
+.t-bl input[type=submit]{
+	background: #f51167;
+	padding: 10px;
+	border: solid 1px #f51167;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: white;
+}
+.t-content{
+	width: 100%;
+	border-left: solid 1px #f51167;
+	border-right: solid 1px #f51167;
+	border-bottom: solid 1px #f51167;
+	padding: 10px;
+}
 
 /*----------------------------------------*/
 /* Template default CSS

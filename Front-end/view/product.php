@@ -108,6 +108,15 @@
 						<a href=""><i class="fa fa-youtube"></i></a>
 					</div>
 				</div>
+
+				<!-- comment -->
+				<div class="col-12 t-title">Bình luận</div>
+				<form class="t-bl" method="post">
+					<input type="text">
+					<input type="submit" value="Gửi bình luận">
+				</form>
+				<div class="t-content"> Nội dung bình luận</div>
+				<!-- end comment -->
 			</div>
 		</div>
 	</section>
