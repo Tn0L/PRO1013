@@ -6,7 +6,7 @@
 -- Generation Time: Nov 11, 2019 at 01:35 AM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
-
+ 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `admin`
 --
-
+ 
 CREATE TABLE `admin` (
   `idAdmin` int(11) NOT NULL,
   `admin` varchar(16) COLLATE utf8_unicode_520_ci NOT NULL,
