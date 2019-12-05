@@ -1,6 +1,6 @@
 <?php
     include 'model/pdo.php';
-    
+    include "./controller/check.php";
     include 'view/header.php';
     if(isset($_GET['act'])){
         switch ($_GET['act']) {
