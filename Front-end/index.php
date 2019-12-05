@@ -31,15 +31,19 @@
                 include_once 'view/cart.php';
                 break;
             case 'contact':
-                $sanpham = show_sanpham();
+                $sanpham = show_sanpham_home();
                 include_once 'view/contact.php';
                 break;
             default:
+                $spmoi = show_sanpham_moi_nhat();
+                $sphome = show_sanpham_home();
                 include 'view/home.php';
                 break;
         }
     }
     else{
+        $spmoi = show_sanpham_moi_nhat();
+        $sphome = show_sanpham_home();
         include 'view/home.php';
     }
     include 'view/footer.php';
