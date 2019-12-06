@@ -11,9 +11,10 @@
         $kt=getadmin($user,$pass);
         $kiemtra=count($kt);
         if($kiemtra>0){
-            $_SESSION['idadmin']=$kt['idAdmin'];
-            $_SESSION['nameadmin']=$kt['admin'];
-            $_SESSION['imgadmin']=$kt['adminAvatar'];
+            $_SESSION['idAdmin']=$kt['idAdmin'];
+            $_SESSION['nameAdmin']=$kt['admin'];
+            $_SESSION['imgAdmin']=$kt['adminAvatar'];
+            $_SESSION['majorAdmin']=$kt['major'];
             header('Location: index.php');
         }
     }

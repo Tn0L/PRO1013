@@ -20,8 +20,8 @@
     <script src="view/js/hoverable-collapse.js"></script>
     <script src="view/js/misc.js"></script>
     <script src="view/js/dashboard.js"></script>
-    <script src="view/js/todolist.js"></script>
     <script src="view/js/validation.js"></script>
+    <script src="view/js/input-file.js"></script>
     <?php
       include 'model/active-menu.php';
     ?>

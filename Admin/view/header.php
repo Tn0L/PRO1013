@@ -40,14 +40,14 @@
                   <span class="availability-status online"></span>
                 </div>
                 <div class="nav-profile-text">
-                  <p class="mb-1 text-black">David Greymaax</p>
+                  <p class="mb-1 text-black"><?Php echo $_SESSION['nameAdmin']; ?></p>
                 </div>
               </a>
               <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
                 <a class="dropdown-item" href="">
                   <i class="mdi mdi-cached mr-2 text-success"></i> Đổi mật khẩu </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="./view/login.php">
+                <a class="dropdown-item" href="./login.php">
                   <i class="mdi mdi-logout mr-2 text-primary"></i> Đăng Xuất </a>
               </div>
             </li>
@@ -73,8 +73,8 @@
                   <!--change to offline or busy as needed-->
                 </div>
                 <div class="nav-profile-text d-flex flex-column">
-                  <span class="font-weight-bold mb-2">David Grey. H</span>
-                  <span class="text-secondary text-small">Project Manager</span>
+                  <span class="font-weight-bold mb-2"><?Php echo $_SESSION['nameAdmin']; ?></span>
+                  <span class="text-secondary text-small"><?Php echo $_SESSION['majorAdmin']; ?></span>
                 </div>
                 <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
               </a>

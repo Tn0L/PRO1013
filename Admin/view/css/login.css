@@ -1,0 +1,11 @@
+.bg-gradient-primary{
+    background: blue!important;
+}
+.bg-login-image{
+    height: 450px;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    margin-top: -40px;
+}
