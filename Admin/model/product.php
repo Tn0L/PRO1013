@@ -16,4 +16,14 @@
         $sql = "UPDATE san_pham SET (ten_san_pham,loai_san_pham,gia,mo_ta) VALUES ('$nameProduct','$categoryProduct','$priceProduct','$describeProduct') WHERE ma_san_pham='$idProduct'";
         pdo_execute($sql);
     }
+    function listColor(){
+        $sql1= "select * from mau where ma_san_pham = 2";
+        $kq1=pdo_query($sql1);
+        return $kq1;
+    }
+    function listSize($size){
+        $sql2 =" select * from kich_thuoc where ma_mau=?";
+        $kq2=pdo_query($sql2,$size);
+        return $kq2;
+    }
 ?>

@@ -30,8 +30,7 @@
                         <label for="exampleSelectGender">Loại Sản Phẩm</label>
                         <select class="form-control" name="categoryProduct" id="exampleSelectGender" >
                             <option><?php if(isset($_GET['categoryProduct'])){echo $_GET['categoryProduct'];}else{echo "";}?></option>
-                            <option>1</option>
-                            <option>2</option>
+                            <option></option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -134,6 +133,13 @@
                                 <?php
                                     $listProduct=loadProduct();
                                     foreach ($listProduct as $product) {
+                                        $listColor=listColor();
+                                        $color = $product['ma_san_pham'];
+                                        foreach ($listColor as $productColor){
+                                            echo
+                                                $productColor['ma_san_pham']
+                                            ;
+                                        }
                                         echo'
                                             <tr>
                                                 <td> '.$product['ma_san_pham'].' </td>
