@@ -133,297 +133,175 @@
                                 <?php
                                     $listProduct=loadProduct();
                                     foreach ($listProduct as $product) {
-                                        $listColor=listColor();
-                                        $color = $product['ma_san_pham'];
-                                        foreach ($listColor as $productColor){
-                                            echo
-                                                $productColor['ma_san_pham']
-                                            ;
-                                        }
-                                        echo'
+                                ?>
                                             <tr>
-                                                <td> '.$product['ma_san_pham'].' </td>
-                                                <td> '.$product['ten_san_pham'].'  </td>
+                                                <td> <?php echo $product['ma_san_pham']; ?> </td>
+                                                <td> <?php echo $product['ten_san_pham']; ?></td>
                                                 <td>
-                                                    '.$product['loai_san_pham'].' 
+                                                    <?php echo $product['loai_san_pham']; ?> 
                                                 </td>
-                                                <td> '.$product['gia'].'  </td>
+                                                <td> <?php echo $product['gia']; ?>  </td>
                                                 <td class="td-detail">
-                                                    <i class="mdi mdi-swap-vertical detail col" data-toggle="collapse" data-target="#collapse-'.$product['ma_san_pham'].'" aria-expanded="true" aria-controls="collapse-'.$product['ma_san_pham'].'"></i>
+                                                    <i class="mdi mdi-swap-vertical detail col" data-toggle="collapse" data-target="#collapse-<?php echo $product['ma_san_pham']; ?>" aria-expanded="true" aria-controls="collapse-<?php echo $product['ma_san_pham']; ?>"></i>
                                                 </td>
                                                 <td>
                                                     <a href="">
                                                         <i class="mdi mdi-library-plus add col" ></i>
                                                     </a> 
-                                                    <a  href="?act=product&idProduct='.$product['ma_san_pham'].'&nameProduct='.$product['ten_san_pham'].'&categoryProduct='.$product['loai_san_pham'].'&priceProduct='.$product['gia'].'&describeProduct='.$product['mo_ta'].'">
+                                                    <a  href="?act=product&idProduct=<?php echo $product['ma_san_pham'];?>&nameProduct=<?php echo $product['ten_san_pham'];?>&categoryProduct=<?php echo $product['loai_san_pham'];?>&priceProduct=<?php echo $product['gia'];?>&describeProduct=<?php echo $product['mo_ta'];?>">
                                                         <i class="mdi mdi-auto-fix fix col"></i>
                                                     </a>
-                                                    <a  href="?act=product&delete='.$product['ma_san_pham'].'">
+                                                    <a  href="?act=product&delete=<?php echo $product['ma_san_pham'];?>">
                                                         <i class="mdi mdi-delete delete col" ></i>
                                                     </a>
                                                 </td>
                                             </tr>
                                             <tr >
                                                 <td colspan="6" class="td-detail-product">
-                                                    <div id="collapse-'.$product['ma_san_pham'].'" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" colspan="6">
+                                                    <div id="collapse-<?php echo $product['ma_san_pham']; ?>" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" colspan="6">
                                                         <div class="detail-product">
                                                             <div class="justify-content-center row">
-                                                                <div class="col-12 col-md-5">
-                                                                    <div class="detail-act">
-                                                                        <a href="">
-                                                                            <i class="mdi mdi-library-plus add col" ></i>
-                                                                        </a> 
-                                                                        <a  href="">
-                                                                            <i class="mdi mdi-auto-fix fix col"></i>
-                                                                        </a>
-                                                                        <a  href="">
-                                                                            <i class="mdi mdi-delete delete col" ></i>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="detail-color" style="background:white">
+                                                                <?php
+                                                                $listColor=listColor($product['ma_san_pham']);
+                                                                foreach ($listColor as $productColor){
+                                                                ?>
+                                                                    <div class="col-12 col-md-5">
+                                                                        <div class="detail-act">
+                                                                            <a href="">
+                                                                                <i class="mdi mdi-library-plus add col" ></i>
+                                                                            </a> 
+                                                                            <a  href="">
+                                                                                <i class="mdi mdi-auto-fix fix col"></i>
+                                                                            </a>
+                                                                            <a  href="">
+                                                                                <i class="mdi mdi-delete delete col" ></i>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="detail-color" style="background:<?php echo $productColor['mau'];?>">
 
-                                                                    </div>
-                                                                    <div id="product-color-1" class="carousel slide detail-slide" data-ride="carousel">
-                                                                        <ol class="carousel-indicators">
-                                                                            <li data-target="#product-color-1" data-slide-to="0" class="active"></li>
-                                                                            <li data-target="#product-color-1" data-slide-to="1"></li>
-                                                                            <li data-target="#product-color-1" data-slide-to="2"></li>
-                                                                        </ol>
-                                                                        <div class="carousel-inner">
-                                                                            <div class="carousel-item active">
-                                                                                <img class="d-block " src="./uploads/products/EG0695-01-white.jpg" alt="First slide">
-                                                                            </div>
-                                                                            <div class="carousel-item">
-                                                                                <img class="d-block " src="./uploads/products/EG0695-02-white.jpg" alt="Second slide">
-                                                                            </div>
-                                                                            <div class="carousel-item">
-                                                                                <img class="d-block " src="./uploads/products/EG0695-03-white.jpg" alt="Third slide">
-                                                                            </div>
                                                                         </div>
-                                                                        <a class="carousel-control-prev" href="#product-color-1" role="button" data-slide="prev">
-                                                                            <span class="mdi mdi-format-align-left" aria-hidden="true"></span>
-                                                                            
-                                                                        </a>
-                                                                        <a class="carousel-control-next" href="#product-color-1" role="button" data-slide="next">
-                                                                            <span class="mdi mdi-format-align-right" aria-hidden="true"></span>
-                                                                            
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-12 col-md-7 row justify-content-start">
-                                                                    <div class="detail-size-head">
-                                                                        <b>Kích Cỡ</b>
-                                                                    </div>
-                                                                    <div class="col-sm-12 col-md-6 col-lg-4">
-                                                                        <div class="detail-size">    
-                                                                            <div class="detail-act">
-                                                                                <a  href="">
-                                                                                    <i class="mdi mdi-auto-fix fix col"></i>
-                                                                                </a>
-                                                                                <a  href="">
-                                                                                    <i class="mdi mdi-delete delete col" ></i>
-                                                                                </a>
+                                                                        <div id="product-color-<?php echo $productColor['id'];?>" class="carousel slide detail-slide" data-ride="carousel">
+                                                                            <ol class="carousel-indicators">
+                                                                                <li data-target="#product-color-<?php echo $productColor['id'];?>" data-slide-to="0" class="active"></li>
+                                                                                <li data-target="#product-color-<?php echo $productColor['id'];?>" data-slide-to="1"></li>
+                                                                                <li data-target="#product-color-<?php echo $productColor['id'];?>" data-slide-to="2"></li>
+                                                                            </ol>
+                                                                            <div class="carousel-inner">
+                                                                                <div class="carousel-item active">
+                                                                                    <img class="d-block " src="./uploads/products/<?php echo $productColor['hinh'];?>" alt="First slide">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img class="d-block " src="./uploads/products/<?php echo $productColor['hinh_1'];?>" alt="Second slide">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img class="d-block " src="./uploads/products/<?php echo $productColor['hinh_2'];?>" alt="Third slide">
+                                                                                </div>
                                                                             </div>
-                                                                            <div class="size-sl">
-                                                                                <b class="col">Size : <span>38</span></b>
-                                                                            </div>
-                                                                            <div class="size-sl">
-                                                                                <b class="col">Số Lượng : <span>10</span> Đôi</b>
-                                                                            </div>
+                                                                            <a class="carousel-control-prev" href="#product-color-<?php echo $productColor['id'];?>" role="button" data-slide="prev">
+                                                                                <span class="mdi mdi-format-align-left" aria-hidden="true"></span>
+                                                                                
+                                                                            </a>
+                                                                            <a class="carousel-control-next" href="#product-color-<?php echo $productColor['id'];?>" role="button" data-slide="next">
+                                                                                <span class="mdi mdi-format-align-right" aria-hidden="true"></span>
+                                                                                
+                                                                            </a>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-sm-12 col-md-6 col-lg-4">
-                                                                        <div class="detail-size">    
-                                                                            <div class="detail-act">
-                                                                                <a  href="">
-                                                                                    <i class="mdi mdi-auto-fix fix col"></i>
-                                                                                </a>
-                                                                                <a  href="">
-                                                                                    <i class="mdi mdi-delete delete col" ></i>
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="size-sl">
-                                                                                <b class="col">Size : <span>39</span></b>
-                                                                            </div>
-                                                                            <div class="size-sl">
-                                                                                <b class="col">Số Lượng : <span>10</span> Đôi</b>
+                                                                    <div class="col-12 col-md-7 row justify-content-start">
+                                                                        <div class="detail-size-head">
+                                                                            <b>Kích Cỡ</b>
+                                                                        </div>
+                                                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                                                            <div class="detail-size">    
+                                                                                <div class="detail-act">
+                                                                                    <a  href="">
+                                                                                        <i class="mdi mdi-auto-fix fix col"></i>
+                                                                                    </a>
+                                                                                    <a  href="">
+                                                                                        <i class="mdi mdi-delete delete col" ></i>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="size-sl">
+                                                                                    <b class="col">Size : <span>38</span></b>
+                                                                                </div>
+                                                                                <div class="size-sl">
+                                                                                    <b class="col">Số Lượng : <span>10</span> Đôi</b>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
-                                                                    </div>
-                                                                    <div class="col-sm-12 col-md-6 col-lg-4">
-                                                                        <div class="detail-size">    
-                                                                            <div class="detail-act">
-                                                                                <a  href="">
-                                                                                    <i class="mdi mdi-auto-fix fix col"></i>
-                                                                                </a>
-                                                                                <a  href="">
-                                                                                    <i class="mdi mdi-delete delete col" ></i>
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="size-sl">
-                                                                                <b class="col">Size : <span>40</span></b>
-                                                                            </div>
-                                                                            <div class="size-sl">
-                                                                                <b class="col">Số Lượng : <span>10</span> Đôi</b>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-sm-12 col-md-6 col-lg-4">
-                                                                        <div class="detail-size">    
-                                                                            <div class="detail-act">
-                                                                                <a  href="">
-                                                                                    <i class="mdi mdi-auto-fix fix col"></i>
-                                                                                </a>
-                                                                                <a  href="">
-                                                                                    <i class="mdi mdi-delete delete col" ></i>
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="size-sl">
-                                                                                <b class="col">Size : <span>41</span></b>
-                                                                            </div>
-                                                                            <div class="size-sl">
-                                                                                <b class="col">Số Lượng : <span>10</span> Đôi</b>
+                                                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                                                            <div class="detail-size">    
+                                                                                <div class="detail-act">
+                                                                                    <a  href="">
+                                                                                        <i class="mdi mdi-auto-fix fix col"></i>
+                                                                                    </a>
+                                                                                    <a  href="">
+                                                                                        <i class="mdi mdi-delete delete col" ></i>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="size-sl">
+                                                                                    <b class="col">Size : <span>39</span></b>
+                                                                                </div>
+                                                                                <div class="size-sl">
+                                                                                    <b class="col">Số Lượng : <span>10</span> Đôi</b>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <div class="detail-bar"></div>
-                                                                </div>
-                                                                <div class="col-12 col-md-5">
-                                                                    <div class="detail-act">
-                                                                        <a href="">
-                                                                            <i class="mdi mdi-library-plus add col" ></i>
-                                                                        </a> 
-                                                                        <a  href="">
-                                                                            <i class="mdi mdi-auto-fix fix col"></i>
-                                                                        </a>
-                                                                        <a  href="">
-                                                                            <i class="mdi mdi-delete delete col" ></i>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="detail-color" style="background:black">
-
-                                                                    </div>
-                                                                    <div id="product-color-2" class="carousel slide detail-slide" data-ride="carousel">
-                                                                        <ol class="carousel-indicators">
-                                                                            <li data-target="#product-color-2" data-slide-to="0" class="active"></li>
-                                                                            <li data-target="#product-color-2" data-slide-to="1"></li>
-                                                                            <li data-target="#product-color-2" data-slide-to="2"></li>
-                                                                        </ol>
-                                                                        <div class="carousel-inner">
-                                                                            <div class="carousel-item active">
-                                                                                <img class="d-block " src="./uploads/products/EG0695-01-black.jpg" alt="First slide">
-                                                                            </div>
-                                                                            <div class="carousel-item">
-                                                                                <img class="d-block " src="./uploads/products/EG0695-02-black.jpg" alt="Second slide">
-                                                                            </div>
-                                                                            <div class="carousel-item">
-                                                                                <img class="d-block " src="./uploads/products/EG0695-03-black.jpg" alt="Third slide">
+                                                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                                                            <div class="detail-size">    
+                                                                                <div class="detail-act">
+                                                                                    <a  href="">
+                                                                                        <i class="mdi mdi-auto-fix fix col"></i>
+                                                                                    </a>
+                                                                                    <a  href="">
+                                                                                        <i class="mdi mdi-delete delete col" ></i>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="size-sl">
+                                                                                    <b class="col">Size : <span>40</span></b>
+                                                                                </div>
+                                                                                <div class="size-sl">
+                                                                                    <b class="col">Số Lượng : <span>10</span> Đôi</b>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
-                                                                        <a class="carousel-control-prev" href="#product-color-2" role="button" data-slide="prev">
-                                                                            <span class="mdi mdi-format-align-left" aria-hidden="true"></span>
-                                                                            
-                                                                        </a>
-                                                                        <a class="carousel-control-next" href="#product-color-2" role="button" data-slide="next">
-                                                                            <span class="mdi mdi-format-align-right" aria-hidden="true"></span>
-                                                                            
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-12 col-md-7 row justify-content-start">
-                                                                    <div class="detail-size-head">
-                                                                        <b>Kích Cỡ</b>
-                                                                    </div>
-                                                                    <div class="col-sm-12 col-md-6 col-lg-4">
-                                                                        <div class="detail-size">    
-                                                                            <div class="detail-act">
-                                                                                <a  href="">
-                                                                                    <i class="mdi mdi-auto-fix fix col"></i>
-                                                                                </a>
-                                                                                <a  href="">
-                                                                                    <i class="mdi mdi-delete delete col" ></i>
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="size-sl">
-                                                                                <b class="col">Size : <span>38</span></b>
-                                                                            </div>
-                                                                            <div class="size-sl">
-                                                                                <b class="col">Số Lượng : <span>10</span> Đôi</b>
+                                                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                                                            <div class="detail-size">    
+                                                                                <div class="detail-act">
+                                                                                    <a  href="">
+                                                                                        <i class="mdi mdi-auto-fix fix col"></i>
+                                                                                    </a>
+                                                                                    <a  href="">
+                                                                                        <i class="mdi mdi-delete delete col" ></i>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="size-sl">
+                                                                                    <b class="col">Size : <span>41</span></b>
+                                                                                </div>
+                                                                                <div class="size-sl">
+                                                                                    <b class="col">Số Lượng : <span>10</span> Đôi</b>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-sm-12 col-md-6 col-lg-4">
-                                                                        <div class="detail-size">    
-                                                                            <div class="detail-act">
-                                                                                <a  href="">
-                                                                                    <i class="mdi mdi-auto-fix fix col"></i>
-                                                                                </a>
-                                                                                <a  href="">
-                                                                                    <i class="mdi mdi-delete delete col" ></i>
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="size-sl">
-                                                                                <b class="col">Size : <span>39</span></b>
-                                                                            </div>
-                                                                            <div class="size-sl">
-                                                                                <b class="col">Số Lượng : <span>10</span> Đôi</b>
-                                                                            </div>
-                                                                        </div>
+                                                                    <div class="col-12">
+                                                                        <div class="detail-bar"></div>
                                                                     </div>
-                                                                    <div class="col-sm-12 col-md-6 col-lg-4">
-                                                                        <div class="detail-size">    
-                                                                            <div class="detail-act">
-                                                                                <a  href="">
-                                                                                    <i class="mdi mdi-auto-fix fix col"></i>
-                                                                                </a>
-                                                                                <a  href="">
-                                                                                    <i class="mdi mdi-delete delete col" ></i>
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="size-sl">
-                                                                                <b class="col">Size : <span>40</span></b>
-                                                                            </div>
-                                                                            <div class="size-sl">
-                                                                                <b class="col">Số Lượng : <span>10</span> Đôi</b>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-sm-12 col-md-6 col-lg-4">
-                                                                        <div class="detail-size">    
-                                                                            <div class="detail-act">
-                                                                                <a  href="">
-                                                                                    <i class="mdi mdi-auto-fix fix col"></i>
-                                                                                </a>
-                                                                                <a  href="">
-                                                                                    <i class="mdi mdi-delete delete col" ></i>
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="size-sl">
-                                                                                <b class="col">Size : <span>41</span></b>
-                                                                            </div>
-                                                                            <div class="size-sl">
-                                                                                <b class="col">Số Lượng : <span>10</span> Đôi</b>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <div class="detail-bar"></div>
-                                                                </div>
+                                                                <?php
+                                                                }
+                                                                ?>
                                                             </div>
                                                         </div>
                                                         <div class="description justify-content-center row">
                                                             <div class="col-8">
                                                                 <b>Mô Tả :</b>
-                                                                <p>'.$product['mo_ta'].' </p>
+                                                                <p><?php echo $product['mo_ta']; ?> </p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </td>
                                             </tr>
-                                        ';
+                                <?php
                                     }
                                 ?>
                             </tbody>
