@@ -197,13 +197,13 @@
                                                                             </ol>
                                                                             <div class="carousel-inner">
                                                                                 <div class="carousel-item active">
-                                                                                    <img class="d-block " src="./uploads/products/<?php echo $productColor['hinh'];?>" alt="First slide">
+                                                                                    <img class="d-block " src="../uploads/products/<?php echo $productColor['hinh'];?>" alt="First slide">
                                                                                 </div>
                                                                                 <div class="carousel-item">
-                                                                                    <img class="d-block " src="./uploads/products/<?php echo $productColor['hinh_1'];?>" alt="Second slide">
+                                                                                    <img class="d-block " src="../uploads/products/<?php echo $productColor['hinh_1'];?>" alt="Second slide">
                                                                                 </div>
                                                                                 <div class="carousel-item">
-                                                                                    <img class="d-block " src="./uploads/products/<?php echo $productColor['hinh_2'];?>" alt="Third slide">
+                                                                                    <img class="d-block " src="../uploads/products/<?php echo $productColor['hinh_2'];?>" alt="Third slide">
                                                                                 </div>
                                                                             </div>
                                                                             <a class="carousel-control-prev" href="#product-color-<?php echo $productColor['id'];?>" role="button" data-slide="prev">

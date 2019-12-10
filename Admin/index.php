@@ -38,9 +38,12 @@
                     deleteProduct($idProduct);
                 }
                 else if(isset($_POST['edit']) && $_POST['edit']){
-                    $idProduct = $_POST["id"];
-                    $nameProduct = $_POST["nameCategory"];
-                    editProduct($name,$id);
+                    $idProduct = $_POST['idProduct'];
+                    $nameProduct = $_POST['nameProduct'];
+                    $categoryProduct = $_POST['categoryProduct'];
+                    $priceProduct = $_POST['priceProduct'];
+                    $describeProduct = $_POST['describeProduct'];
+                    editProduct($idProduct,$nameProduct,$categoryProduct,$priceProduct,$describeProduct);
                 }
                 include_once 'view/add-product.php';
                 break;

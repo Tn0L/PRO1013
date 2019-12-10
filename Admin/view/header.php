@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Star Sneakers Admin</title>
-    <link rel="shortcut icon" href="./uploads/favicon.png" />
+    <link rel="shortcut icon" href="../uploads/favicon.png" />
     <!-- lib -->
     <link rel="stylesheet" href="./vendors/mdi/css/materialdesignicons.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -20,11 +20,11 @@
       <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
           <a class="navbar-brand brand-logo " href="?">
-            <img class="logo" src="./uploads/favicon.png" alt="logo" />
+            <img class="logo" src="../uploads/favicon.png" alt="logo" />
             <b>Star Sneakers</b>
           </a>
           <a class="navbar-brand brand-logo-mini" href="?">
-            <img class="small-logo" src="./uploads/favicon.png" alt="logo" />
+            <img class="small-logo" src="../uploads/favicon.png" alt="logo" />
           </a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-stretch">
@@ -36,7 +36,7 @@
             <li class="nav-item nav-profile dropdown">
               <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
                 <div class="nav-profile-img">
-                  <img src="./uploads/admins/<?Php echo $_SESSION['imgAdmin']; ?>" alt="image">
+                  <img src="../uploads/admins/<?Php echo $_SESSION['imgAdmin']; ?>" alt="image">
                   <span class="availability-status online"></span>
                 </div>
                 <div class="nav-profile-text">
@@ -68,7 +68,7 @@
             <li class="nav-item nav-profile">
               <a href="#" class="nav-link">
                 <div class="nav-profile-image">
-                  <img src="./uploads/admins/<?Php echo $_SESSION['imgAdmin']; ?>" alt="profile">
+                  <img src="../uploads/admins/<?Php echo $_SESSION['imgAdmin']; ?>" alt="profile">
                   <span class="login-status online"></span>
                   <!--change to offline or busy as needed-->
                 </div>
