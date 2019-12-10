@@ -1,6 +1,11 @@
 <?php
     function loadProduct(){
-        $sql="select * from san_pham";
+        $sql="SELECT * from loai l INNER JOIN san_pham sp ON l.ma_loai=sp.loai_san_pham";
+        $kq=pdo_query($sql);
+        return $kq;
+    }
+    function loadCategories(){
+        $sql="select * from loai";
         $kq=pdo_query($sql);
         return $kq;
     }
@@ -22,8 +27,8 @@
         return $kq1;
     }
     function listSize($size){
-        $sql2 =" select * from kich_thuoc where ma_mau=?";
-        $kq2=pdo_query($sql2,$size);
+        $sql ='SELECT * FROM kich_thuoc WHERE id_mau='.$size;
+        $kq2=pdo_query($sql);
         return $kq2;
     }
 ?>
