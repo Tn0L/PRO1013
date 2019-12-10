@@ -45,6 +45,44 @@
                     $describeProduct = $_POST['describeProduct'];
                     editProduct($idProduct,$nameProduct,$categoryProduct,$priceProduct,$describeProduct);
                 }
+                else if(isset($_POST['submit1']) && $_POST['submit1']){
+                    $nameProduct = $_POST['nameProduct'];
+                    $categoryProduct = $_POST['categoryProduct'];
+                    $priceProduct = $_POST['priceProduct'];
+                    $describeProduct = $_POST['describeProduct'];
+                    insertColor($nameProduct,$categoryProduct,$priceProduct,$describeProduct);
+                }
+                else if(isset($_GET['delete1']) && $_GET['delete1']){
+                    $idProduct = $_GET['delete1'];
+                    deleteColor($idProduct);
+                }
+                else if(isset($_POST['edit1']) && $_POST['edit1']){
+                    $idProduct = $_POST['idProduct'];
+                    $nameProduct = $_POST['nameProduct'];
+                    $categoryProduct = $_POST['categoryProduct'];
+                    $priceProduct = $_POST['priceProduct'];
+                    $describeProduct = $_POST['describeProduct'];
+                    editColor($idProduct,$nameProduct,$categoryProduct,$priceProduct,$describeProduct);
+                }
+                else if(isset($_POST['submit2']) && $_POST['submit2']){
+                    $nameProduct = $_POST['nameProduct'];
+                    $categoryProduct = $_POST['categoryProduct'];
+                    $priceProduct = $_POST['priceProduct'];
+                    $describeProduct = $_POST['describeProduct'];
+                    insertSize($nameProduct,$categoryProduct,$priceProduct,$describeProduct);
+                }
+                else if(isset($_GET['delete2']) && $_GET['delete2']){
+                    $idProduct = $_GET['delete2'];
+                    deleteSize($idProduct);
+                }
+                else if(isset($_POST['edit2']) && $_POST['edit2']){
+                    $idProduct = $_POST['idProduct'];
+                    $nameProduct = $_POST['nameProduct'];
+                    $categoryProduct = $_POST['categoryProduct'];
+                    $priceProduct = $_POST['priceProduct'];
+                    $describeProduct = $_POST['describeProduct'];
+                    editSize($idProduct,$nameProduct,$categoryProduct,$priceProduct,$describeProduct);
+                }
                 include_once 'view/add-product.php';
                 break;
             case 'cart':
