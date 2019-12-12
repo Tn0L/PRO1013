@@ -83,8 +83,17 @@
             case 'cart':
                 include_once 'view/cart.php';
                 break;
+            case 'comment':
+                include_once 'view/comment.php';
+                break;
             case 'contact':
                 include_once 'view/contact.php';
+                break;
+            case 'pass':
+                include_once 'view/pass.php';
+                break;
+            case 'info':
+                include_once 'view/info.php';
                 break;
             default:
                 include 'view/404.php';

@@ -97,20 +97,20 @@
                 <i class="mdi mdi-table-large menu-icon"></i>
               </a>
             </li>
-            <li class="nav-item" id="home">
-              <a class="nav-link" href="pages/forms/basic_elements.html">
+            <li class="nav-item" id="cart">
+              <a class="nav-link" href="?act=cart">
                 <span class="menu-title">Giỏ Hàng</span>
                 <i class="mdi mdi-cart menu-icon"></i>
               </a>
             </li>
-            <li class="nav-item" id="home">
-              <a class="nav-link" href="pages/forms/basic_elements.html">
+            <li class="nav-item" id="comment">
+              <a class="nav-link" href="?act=comment">
                 <span class="menu-title">Bình Luận</span>
                 <i class="mdi mdi-comment menu-icon"></i>
               </a>
             </li>
-            <li class="nav-item" id="home">
-              <a class="nav-link" href="pages/forms/basic_elements.html">
+            <li class="nav-item" id="contact">
+              <a class="nav-link" href="?act=contact">
                 <span class="menu-title">Liên Hệ</span>
                 <i class="mdi mdi-email menu-icon"></i>
               </a>
