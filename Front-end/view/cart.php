@@ -10,82 +10,29 @@
 							<table>
 							<thead>
 								<tr>
-									<th class="product-th">Product</th>
-									<th class="quy-th">Quantity</th>
-									<th class="size-th">SizeSize</th>
-									<th class="total-th">Price</th>
+									<th class="product-th">Sản phẩm</th>
+									<th class="quy-th">Name</th>
+									<th class="total-th">Giá</th>
+									<th class="quy-th">Số lượng</th>
+									<th  class="quy-th">Màu</th>
+									<th class="size-th">Kích cỡ</th>
+									<th class="total-th">Tổng cộng</th>
 								</tr>
 							</thead>
-							<tbody>
-								<tr>
-									<td class="product-col">
-										<img src="view/img/cart/1.jpg" alt="">
-										<div class="pc-title">
-											<h4>Animal Print Dress</h4>
-											<p>$45.90</p>
-										</div>
-									</td>
-									<td class="quy-col">
-										<div class="quantity">
-					                        <div class="pro-qty">
-												<input type="text" value="1">
-											</div>
-                    					</div>
-									</td>
-									<td class="size-col"><h4>Size M</h4></td>
-									<td class="total-col"><h4>$45.90</h4></td>
-								</tr>
-								<tr>
-									<td class="product-col">
-										<img src="view/img/cart/2.jpg" alt="">
-										<div class="pc-title">
-											<h4>Ruffle Pink Top</h4>
-											<p>$45.90</p>
-										</div>
-									</td>
-									<td class="quy-col">
-										<div class="quantity">
-					                        <div class="pro-qty">
-												<input type="text" value="1">
-											</div>
-                    					</div>
-									</td>
-									<td class="size-col"><h4>Size M</h4></td>
-									<td class="total-col"><h4>$45.90</h4></td>
-								</tr>
-								<tr>
-									<td class="product-col">
-										<img src="view/img/cart/3.jpg" alt="">
-										<div class="pc-title">
-											<h4>Skinny Jeans</h4>
-											<p>$45.90</p>
-										</div>
-									</td>
-									<td class="quy-col">
-										<div class="quantity">
-					                        <div class="pro-qty">
-												<input type="text" value="1">
-											</div>
-                    					</div>
-									</td>
-									<td class="size-col"><h4>Size M</h4></td>
-									<td class="total-col"><h4>$45.90</h4></td>
-								</tr>
+							<tbody class="show-cart">
+								
 							</tbody>
 						</table>
 						</div>
 						<div class="total-cost">
-							<h6>Total <span>$99.90</span></h6>
+							<h6>Tổng cộng $<span class="total-cart"></span> </h6>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 card-right">
-					<form class="promo-code-form">
-						<input type="text" placeholder="Enter promo code">
-						<button>Submit</button>
-					</form>
-					<a href="" class="site-btn">Proceed to checkout</a>
-					<a href="" class="site-btn sb-dark">Continue shopping</a>
+					<a style="color:white;" class="clear-cart site-btn bg-primary">Xóa giỏ hàng</a>
+					<a href="" class="site-btn">Kiểm tra</a>
+					<a href="" class="site-btn sb-dark">Tiếp tục mua hàng</a>
 				</div>
 			</div>
 		</div>
@@ -96,7 +43,7 @@
 	<section class="related-product-section">
 		<div class="container">
 			<div class="section-title">
-				<h2>CONTIMUE SHOPPING</h2>
+				<h2>Tiếp tục mua hàng</h2>
 			</div>
 			<div class="product-slider owl-carousel">
 

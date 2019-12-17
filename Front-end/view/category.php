@@ -4,13 +4,15 @@
 			<div class="row">
 				<div class="col-lg-3 order-2 order-lg-1">
 					<div class="filter-widget">
-						<h2 class="fw-title">Categories</h2>
+						<h2 class="fw-title">Loại</h2>
 						<ul class="category-menu">
-							<li><a href="#">Nữ</a>
+							<?php foreach($danhmuc as $data):?>
+								<li><a href="?act=category&id_loai=<?=$data['ma_loai']?>"><?= $data['ten_loai']?></a></li>
+							<?php endforeach; ?>
+
+							<!-- <li><a href="#">Nữ</a>
 								<ul class="sub-menu">
-									<?php foreach($danhmuc as $data):?>
-										<li><a href="?act=category&id_loai=<?=$data['ma_loai']?>"><?= $data['ten_loai']?></a></li>
-									<?php endforeach; ?>
+									// ở đây
 								</ul>
 							</li>
 							<li><a href="#">Nam</a>
@@ -21,11 +23,11 @@
 								<ul class="sub-menu">
 									<li><a href="#">Loại 3 <span>(4)</span></a></li>
 								</ul>
-							</li>
+							</li> -->
 
 						</ul>
 					</div>
-					<div class="filter-widget mb-0">
+					<!-- <div class="filter-widget mb-0">
 						<h2 class="fw-title">refine by</h2>
 						<div class="price-range-wrap">
 							<h4>Price</h4>
@@ -43,7 +45,7 @@
                                 </div>
                             </div>
                         </div>
-					</div>
+					</div> -->
 					<div class="filter-widget mb-0">
 						<h2 class="fw-title">color by</h2>
 						<div class="fw-color-choose">
@@ -114,7 +116,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="filter-widget">
+					<!-- <div class="filter-widget">
 						<h2 class="fw-title">Brand</h2>
 						<ul class="category-menu">
 							<li><a href="#">Abercrombie & Fitch <span>(2)</span></a></li>
@@ -123,7 +125,7 @@
 							<li><a href="#">Missguided<span>(27)</span></a></li>
 							<li><a href="#">Zara<span>(19)</span></a></li>
 						</ul>
-					</div>
+					</div> -->
 				</div>
 
 				<div class="col-lg-9  order-1 order-lg-2 mb-5 mb-lg-0">
@@ -163,9 +165,17 @@
 							</div>
 
 						<?php endforeach; ?>
-
+						<div class="col-md-12 text-center">
+								<div class="block-27">
+							<ul>
+								<li><a href="#"><i class="ion-ios-arrow-back"></i></a></li>
+								<?=$phantrang;?>
+								<li><a href="#"><i class="ion-ios-arrow-forward"></i></a></li>
+							</ul>
+							</div>
+							</div>
 						<div class="text-center w-100 pt-3">
-							<button class="site-btn sb-line sb-dark">LOAD MORE</button>
+							<a href="?act=category"><button class="site-btn sb-line sb-dark">XEM THÊM</button></a>
 						</div>
 					</div>
 				</div>

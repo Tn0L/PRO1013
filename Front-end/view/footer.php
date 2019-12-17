@@ -1,39 +1,34 @@
-
-	<!-- Footer section -->
-	<section class="footer-section">
+<!-- Footer section -->
+<section class="footer-section">
 		<div class="container">
 			<div class="footer-logo text-center">
-				<a href="index.php"><img src="/view/img/logo-light.png" alt=""></a>
+				<a href="index.php"><img src="uploaded/logocochu.png" alt=""></a>
 			</div>
 			<div class="row">
-				<div class="col-lg-3 col-sm-6">
+				<div class="col-lg-5 col-sm-6">
 					<div class="footer-widget about-widget">
-						<h2>About</h2>
-						<p>Donec vitae purus nunc. Morbi faucibus erat sit amet congue mattis. Nullam frin-gilla faucibus urna, id dapibus erat iaculis ut. Integer ac sem.</p>
-						<img src="view/img/cards.png" alt="">
+						<h2>Giới Thiệu Chung</h2>
+						<p>StarSneaker là dự án của 5 sinh viên trường Cao Đẳng FPT Polytecnic</p>
+						<img style="width: 55%;" src="view/img/Poly.png" alt="">
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6">
 					<div class="footer-widget about-widget">
-						<h2>Questions</h2>
+						<h2>HỎI ĐÁP</h2>
 						<ul>
-							<li><a href="">About Us</a></li>
-							<li><a href="">Track Orders</a></li>
-							<li><a href="">Returns</a></li>
-							<li><a href="">Jobs</a></li>
-							<li><a href="">Shipping</a></li>
-							<li><a href="">Blog</a></li>
-						</ul>
-						<ul>
-							<li><a href="">Partners</a></li>
-							<li><a href="">Bloggers</a></li>
-							<li><a href="">Support</a></li>
-							<li><a href="">Terms of Use</a></li>
-							<li><a href="">Press</a></li>
+							<li><a href="">Về Chúng Tôi</a></li>
+							<li><a href="">Theo Dõi Đơn Hàng</a></li>
+							<li><a href="">Chính Sách Đổi Trả</a></li>
+							<li><a href="">Công Việc</a></li>
+							<li><a href="">Chính Sách Giao Hàng</a></li>
+							<li><a href="">Đối Tác</a></li>
+							<li><a href="">Hỗ Trợ</a></li>
+							<li><a href="">Điều Khoản Sử Dụng</a></li>
+						
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6">
+				<!-- <div class="col-lg-3 col-sm-6">
 					<div class="footer-widget about-widget">
 						<h2>Questions</h2>
 						<div class="fw-latest-post-widget">
@@ -55,25 +50,25 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<div class="col-lg-3 col-sm-6">
 					<div class="footer-widget contact-widget">
-						<h2>Questions</h2>
+						<h2>HỎI ĐÁP</h2>
 						<div class="con-info">
-							<span>C.</span>
-							<p>Your Company Ltd </p>
+							<span>Tên Công Ty.</span>
+							<p>StarSneaker </p>
 						</div>
 						<div class="con-info">
-							<span>B.</span>
-							<p>1481 Creekside Lane  Avila Beach, CA 93424, P.O. BOX 68 </p>
+							<span>Địa Chỉ.</span>
+							<p>Cao Đẳng Thực Hành FPT-Polytecnic  <br>  Công Viên Phần Mềm Quang Trung </p>
 						</div>
 						<div class="con-info">
-							<span>T.</span>
-							<p>+53 345 7953 32453</p>
+							<span>Số Điện Thoại.</span>
+							<p>098 172 58 36</p>
 						</div>
 						<div class="con-info">
-							<span>E.</span>
-							<p>office@youremail.com</p>
+							<span>Email.</span>
+							<p>starsneaker@online.com</p>
 						</div>
 					</div>
 				</div>
@@ -84,15 +79,15 @@
 				<div class="social-links">
 					<a href="" class="instagram"><i class="fa fa-instagram"></i><span>instagram</span></a>
 					<a href="" class="google-plus"><i class="fa fa-google-plus"></i><span>g+plus</span></a>
-					<a href="" class="pinterest"><i class="fa fa-pinterest"></i><span>pinterest</span></a>
+					<!-- <a href="" class="pinterest"><i class="fa fa-pinterest"></i><span>pinterest</span></a> -->
 					<a href="" class="facebook"><i class="fa fa-facebook"></i><span>facebook</span></a>
-					<a href="" class="twitter"><i class="fa fa-twitter"></i><span>twitter</span></a>
+					<!-- <a href="" class="twitter"><i class="fa fa-twitter"></i><span>twitter</span></a> -->
 					<a href="" class="youtube"><i class="fa fa-youtube"></i><span>youtube</span></a>
-					<a href="" class="tumblr"><i class="fa fa-tumblr-square"></i><span>tumblr</span></a>
+					<!-- <a href="" class="tumblr"><i class="fa fa-tumblr-square"></i><span>tumblr</span></a> -->
 				</div>
 
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> 
-<p class="text-white text-center mt-5">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+<!-- <p class="text-white text-center mt-5">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p> -->
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 
 			</div>
@@ -111,6 +106,7 @@
 	<script src="view/js/jquery.zoom.min.js"></script>
 	<script src="view/js/jquery-ui.min.js"></script>
 	<script src="view/js/main.js"></script>
+	<script src="view/js/script.js"></script>
 
 	</body>
 </html>

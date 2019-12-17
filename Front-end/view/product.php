@@ -23,7 +23,7 @@
 					<h2 class="p-title"><?=$chitiet['ten_san_pham']?></h2>
 					<h3 class="p-price"><?= number_format($chitiet['gia'])." đ"; ?></h3>
 					<h4 class="p-stock">Available: <span>In Stock</span></h4>
-					<div class="p-rating">
+					<!-- <div class="p-rating">
 						<i class="fa fa-star-o"></i>
 						<i class="fa fa-star-o"></i>
 						<i class="fa fa-star-o"></i>
@@ -32,39 +32,43 @@
 					</div>
 					<div class="p-review">
 						<a href="">3 reviews</a>|<a href="">Add your review</a>
+					</div> -->
+					<div class="fw-size-choose">
+						<p>Color</p>
+						<div class="sc-item">
+							<input class="color" type="radio" name="cl" id="red" value="red" onclick="color(0)" checked>
+							<label for="red" style="background: red;"></label>
+						</div>
+						<div class="sc-item">
+							<input class="color" type="radio" name="cl" id="black" value="black" onclick="color(1)">
+							<label for="black" style="background: black;" ></label>
+						</div>
+						<div class="sc-item">
+							<input class="color" type="radio" name="cl" id="white"value="white" onclick="color(2)">
+							<label for="white" style="background: white;"></label>
+						</div>
 					</div>
+					<!-- end color -->
 					<div class="fw-size-choose">
 						<p>Size</p>
 						<div class="sc-item">
-							<input type="radio" name="sc" id="xs-size">
-							<label for="xs-size">32</label>
+							<input class="size" type="radio" name="sc" id="32" value="32" onclick="kichthuoc(0)" checked >
+							<label for="32">32</label>
 						</div>
 						<div class="sc-item">
-							<input type="radio" name="sc" id="s-size">
-							<label for="s-size">34</label>
+							<input class="size" type="radio" name="sc" id="34" value="34" onclick="kichthuoc(1)">
+							<label for="34">34</label>
 						</div>
 						<div class="sc-item">
-							<input type="radio" name="sc" id="m-size" checked="">
-							<label for="m-size">36</label>
-						</div>
-						<div class="sc-item">
-							<input type="radio" name="sc" id="l-size">
-							<label for="l-size">38</label>
-						</div>
-						<div class="sc-item disable">
-							<input type="radio" name="sc" id="xl-size" disabled>
-							<label for="xl-size">40</label>
-						</div>
-						<div class="sc-item">
-							<input type="radio" name="sc" id="xxl-size">
-							<label for="xxl-size">42</label>
+							<input class="size" type="radio" name="sc" id="36" value="36" onclick="kichthuoc(2)">
+							<label for="36">36</label>
 						</div>
 					</div>
 					<div class="quantity">
 						<p>Quantity</p>
                         <div class="pro-qty"><input type="text" value="1"></div>
                     </div>
-					<a href="#" class="site-btn">SHOP NOW</a>
+					<a data-color="red" data-kichthuoc="32" data-id="<?php echo $chitiet['ma_san_pham']?>" data-name="<?php echo $chitiet['ten_san_pham']?>" data-img="view/img/category/<?=$chitiet['hinh']?>" data-price="<?php echo $chitiet['gia']?>" class="add-to-cart site-btn" id="addtocart">SHOP NOW</a>
 					<div id="accordion" class="accordion-area">
 						<div class="panel">
 							<div class="panel-header" id="headingOne">

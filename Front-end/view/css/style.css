@@ -393,18 +393,42 @@ ol {
 	background: #f0f0f0;
 }
 
-.header-search-form button {
+.header-search-form .nhsearch {
 	position: absolute;
 	height: 100%;
-	right: 18px;
+	width: 20%;
+	right: 0px;
 	top: 0;
-	font-size: 26px;
-	color: #000;
+	font-size: 20px;
+	color: #fff;
 	border: none;
 	cursor: pointer;
-	background-color: transparent;
+	background: radial-gradient(#f51167  20%,white);
 }
-
+.block-27 ul, .block-27 ul li {
+	padding: 0;
+	margin: 0;
+	list-style: none; 
+}  
+.block-27 ul li {
+	display: inline-block;
+	margin-bottom: 4px; 
+}
+.block-27 ul li a, .block-27 ul li span {
+	  text-align: center;
+	  display: inline-block;
+	  width: 40px;
+	  height: 40px;
+	  line-height: 40px;
+	  border-radius: 50%;
+	  border: 1px solid #ccc; 
+	}
+.block-27 ul li.active a, .block-27 ul li.active span {
+	  background: #616161;
+	  color: #fff;
+	  border: 1px solid transparent; 
+	}
+  
 .user-panel .up-item {
 	display: inline-block;
 	font-size: 14px;
@@ -1046,6 +1070,9 @@ ol {
 
 .footer-logo {
 	padding-bottom: 60px;
+	width: 200px;
+	height: 120px;
+	margin: 0 auto;
 }
 
 .footer-widget {
@@ -1056,7 +1083,7 @@ ol {
 .footer-widget h2 {
 	font-size: 18px;
 	font-weight: 700;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: #fff;
 	margin-bottom: 45px;
 }
@@ -1163,6 +1190,7 @@ ol {
 .social-links-warp {
 	border-top: 2px solid #3b3535;
 	padding: 46px 0;
+	text-align: center;
 }
 
 .social-links a {
@@ -1519,8 +1547,7 @@ ol {
 }
 
 .fw-size-choose input[type=radio]:checked+label {
-	background: #f51167;
-	color: #fff;
+	color: black;
 }
 
 /* --------------
@@ -1648,7 +1675,7 @@ ol {
 	width: 33px;
 	height: 33px;
 	font-size: 12px;
-	border: 2px solid #414141;
+	border: 2px solid black;
 }
 
 .product-details .fw-size-choose input[type=radio]:checked+label {
@@ -1800,7 +1827,9 @@ ol {
 .cart-table table tr th.product-th {
 	text-align: left;
 }
-
+.product-th img {
+	width: 160px;
+}
 .cart-table table tr th.size-th {
 	padding-right: 70px;
 }
@@ -2385,7 +2414,7 @@ ol {
 	.cart-table table tr th.quy-th,
 	.cart-table .quy-col {
 		padding-right: 0;
-		width: 70px;
+		width: 50px;
 	}
 	.cart-table .quy-col {
 		width: 80px;

@@ -4,11 +4,12 @@
 	<!-- Hero section -->
 	<section class="hero-section">
 		<div class="hero-slider owl-carousel">
+
 			<div class="hs-item set-bg" data-setbg="view/img/bg.jpg">
 				<div class="container">
 					<div class="row">
 						<div class="col-xl-6 col-lg-7 text-white">
-							<span>New Arrivals</span>
+							<span>SẢN PHẨM MỚI</span>
 							<h2>denim jackets</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
 							<a href="#" class="site-btn sb-line">DISCOVER</a>
@@ -22,6 +23,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="hs-item set-bg" data-setbg="view/img/bg-2.jpg">
 				<div class="container">
 					<div class="row">
@@ -116,13 +118,13 @@
 	<section class="product-filter-section">
 		<div class="container">
 			<div class="section-title">
-				<h2>BROWSE TOP SELLING PRODUCTS</h2>
+				<h2>SẢN PHẨM BÁN CHẠY </h2>
 			</div>
 
 			<ul class="product-filter-menu row justify-content-center">
-				<li><a href="#">TOPS</a></li>
-				<li><a href="#">JUMPSUITS</a></li>
-				<li><a href="#">LINGERIE</a></li>
+				<?php foreach($danhmuc as $data):?>
+					<li><a href="?act=category&id_loai=<?=$data['ma_loai']?>"><?= $data['ten_loai']?></a></li>
+				<?php endforeach; ?>
 			</ul>
 			<div class="row">
 			<?php foreach($sphome as $dulieu):?>

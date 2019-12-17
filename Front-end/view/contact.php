@@ -1,31 +1,31 @@
-
-	<!-- Contact section -->
-	<section class="contact-section">
+<!-- Contact section -->
+<section class="contact-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 contact-info">
-					<h3>Get in touch</h3>
-					<p>Main Str, no 23, New York</p>
-					<p>+546 990221 123</p>
-					<p>hosting@contact.com</p>
+					<h3>Liên Lạc</h3>
+					<p>Cao Đẳng Thực Hành FPT-Polytechnic</p>
+					<p>098 172 58 36</p>
+					<p>starsneaker@online.com</p>
 					<div class="contact-social">
 						<a href="#"><i class="fa fa-pinterest"></i></a>
 						<a href="#"><i class="fa fa-facebook"></i></a>
 						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-dribbble"></i></a>
-						<a href="#"><i class="fa fa-behance"></i></a>
+						<!-- <a href="#"><i class="fa fa-dribbble"></i></a> -->
+						<!-- <a href="#"><i class="fa fa-behance"></i></a> -->
 					</div>
 					<form class="contact-form">
-						<input type="text" placeholder="Your name">
-						<input type="text" placeholder="Your e-mail">
-						<input type="text" placeholder="Subject">
-						<textarea placeholder="Message"></textarea>
-						<button class="site-btn">SEND NOW</button>
+						<input type="text" placeholder="Tên">
+						<input type="text" placeholder="Email">
+						<input type="text" placeholder="Chủ đề">
+						<textarea placeholder="Nội dung"></textarea>
+						<button class="site-btn">GỬI</button>
 					</form>
 				</div>
 			</div>
 		</div>
-		<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14376.077865872314!2d-73.879277264103!3d40.757667781624285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1546528920522" style="border:0" allowfullscreen></iframe></div>
+		<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62702.177561812874!2d106.6234734!3d10.8200279!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752a20be133a37%3A0x2222564f53ae22
+		8d!2zQ8O0bmcgVmnDqm4gUGjhuqduIE3hu4FtIFF1YW5nIFRydW5n!5e0!3m2!1svi!2s!4v1576142048408!5m2!1svi!2s" width="100" height="300" frameborder="0" style="border:0;"></iframe></div>
 	</section>
 	<!-- Contact section end -->
 
@@ -34,7 +34,7 @@
 	<section class="related-product-section">
 		<div class="container">
 			<div class="section-title">
-				<h2>RELATED PRODUCTS</h2>
+				<h2>SẢN PHẨM LIÊN QUAN</h2>
 			</div>
 			<div class="product-slider owl-carousel">
 
@@ -57,4 +57,3 @@
 		</div>
 	</section>
 	<!-- Related product section end -->
-
