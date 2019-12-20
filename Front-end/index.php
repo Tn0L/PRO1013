@@ -2,6 +2,7 @@
     require 'global.php';
     require_once 'model/pdo.php';
     require_once 'model/loai.php';
+    require_once 'model/lienhe.php';
     require_once 'model/sanpham.php';
     // ìn lu header
     include 'view/header.php';
@@ -25,7 +26,7 @@
                     $page= $_GET['page'];
                 }else{
                     $page=1;
-                } 
+                }
                 $danhmuc = show_danhmuc();
                 $sanpham = show_sanpham($id_loai,$kyw,$page);
                 $tongsp = count(tongsp($id_loai));
@@ -45,6 +46,13 @@
                 include_once 'view/cart.php';
                 break;
             case 'contact':
+                if(isset($_POST['send']) && $_POST['send']){
+                    $ten = $_POST['ten'];
+                    $email = $_POST['email'];
+                    $sdt = $_POST['sdt'];
+                    $noidung = $_POST['noidung'];
+                    insertContact($ten,$email,$sdt,$noidung);
+                }
                 $sanpham = show_sanpham_home();
                 include_once 'view/contact.php';
                 break;

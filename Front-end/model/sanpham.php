@@ -46,6 +46,11 @@
         }
         return $phantrang;
     }
+    function listColor($idColor){
+        $sql = 'SELECT * FROM mau WHERE ma_san_pham='.$idColor ;
+        $data= pdo_query($sql);
+        return $data;
+    }
     function show_sanpham_home(){
         $sql = "SELECT * FROM san_pham LIMIT 12";
         $data = pdo_query($sql);

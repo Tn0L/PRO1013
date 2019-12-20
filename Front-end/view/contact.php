@@ -11,15 +11,13 @@
 						<a href="#"><i class="fa fa-pinterest"></i></a>
 						<a href="#"><i class="fa fa-facebook"></i></a>
 						<a href="#"><i class="fa fa-twitter"></i></a>
-						<!-- <a href="#"><i class="fa fa-dribbble"></i></a> -->
-						<!-- <a href="#"><i class="fa fa-behance"></i></a> -->
 					</div>
-					<form class="contact-form">
-						<input type="text" placeholder="Tên">
-						<input type="text" placeholder="Email">
-						<input type="text" placeholder="Chủ đề">
-						<textarea placeholder="Nội dung"></textarea>
-						<button class="site-btn">GỬI</button>
+					<form method="post" class="contact-form">
+						<input name="ten" type="text" placeholder="Tên">
+						<input name="email" type="text" placeholder="Email">
+						<input name="sdt" type="text" placeholder="Số điện thoại">
+						<textarea name="noidung" placeholder="Nội dung"></textarea>
+						<input type="submit" name="send" value="Gửi" class="btn">
 					</form>
 				</div>
 			</div>

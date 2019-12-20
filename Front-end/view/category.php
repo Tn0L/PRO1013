@@ -116,50 +116,29 @@
 							</div>
 						</div>
 					</div>
-					<!-- <div class="filter-widget">
-						<h2 class="fw-title">Brand</h2>
-						<ul class="category-menu">
-							<li><a href="#">Abercrombie & Fitch <span>(2)</span></a></li>
-							<li><a href="#">Asos<span>(56)</span></a></li>
-							<li><a href="#">Bershka<span>(36)</span></a></li>
-							<li><a href="#">Missguided<span>(27)</span></a></li>
-							<li><a href="#">Zara<span>(19)</span></a></li>
-						</ul>
-					</div> -->
 				</div>
 
 				<div class="col-lg-9  order-1 order-lg-2 mb-5 mb-lg-0">
 					<div class="row">
-						<!-- <div class="col-lg-4 col-sm-6">
-							<div class="product-item">
-								<div class="pi-pic">
-									<div class="tag-sale">ON SALE</div>
-									<img src="view/img/product/6.jpg" alt="">
-									<div class="pi-links">
-										<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
-										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-									</div>
-								</div>
-								<div class="pi-text">
-									<h6>$35,00</h6>
-									<p>Black and White Stripes Dress</p>
-								</div>
-							</div>
-						</div> -->
 						<?php foreach($sanpham as $get_product): ?>
 
 							<div class="col-lg-4 col-sm-6">
 								<div class="product-item">
-									<div class="pi-pic">
-									<a href="?act=product&id=<?=$get_product['ma_san_pham']?>"><img src="view/img/category/<?= $get_product['hinh']?>" alt=""></a>
-										<div class="pi-links">
-											<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
-											<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+								<?php $listColor = listColor($get_product['ma_san_pham']);
+									foreach ($listColor as $hinh):
+								?>
+										<div class="pi-pic">
+										<a href="?act=product&id=<?=$hinh['ma_san_pham']?>&idcolor=<?=$hinh['id']?>">
+										<img src="view/img/category/<?= $hinh['hinh']?>" alt=""></a>
+											<div class="pi-links">
+												<!-- <a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a> -->
+												<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+											</div>
 										</div>
-									</div>
+								<?php endforeach ?>
 									<div class="pi-text">
 										<h6><?= $get_product['gia']?></h6>
-										<a href="?act=product&id=<?=$get_product['ma_san_pham']?>"><?= $get_product['ten_san_pham']?></a>
+										<a href="?act=product&id=<?=$get_product['ma_san_pham']?>&idcolor=<?=$hinh['id']?>"><?= $get_product['ten_san_pham']?></a>
 									</div>
 								</div>
 							</div>
